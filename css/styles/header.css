@@ -1,0 +1,205 @@
+header .contain {
+    background-color: var(--white-color);
+    gap: 30px;
+    height: 100px;
+}
+
+header .contain .logo picture {
+    width: 240px;
+}
+
+header .contain .logo picture img {
+    width: 100%;
+}
+
+header .contain .lists {
+    gap: 50px;
+    height: 100%;
+}
+
+header .contain .lists>li {
+    position: relative;
+    color: var(--black-color);
+    height: 100%;
+    cursor: pointer;
+}
+
+header .contain .lists>li .cat {
+    z-index: 100;
+    gap: 7px;
+    position: relative;
+}
+
+header .contain .lists>li .cat::before {
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    border-radius: 30px;
+    width: 100%;
+    transition: var(--trans);
+    height: 100%;
+    transform: rotateY(90deg);
+    z-index: -1;
+    padding: 6px 20px;
+}
+
+header .contain .lists>li:hover .cat::before {
+    transform: rotateX(0);
+}
+
+header .contain .lists>li .cat i {
+    font-size: 15px;
+    transition: var(--trans);
+}
+
+header .contain .lists>li:hover .cat i {
+    transform: rotate(-180deg);
+}
+
+header .contain .lists>li .cat a {
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+header .contain .lists>li .cat:hover,
+header .contain .lists>li:hover .cat a,
+header .contain .lists>li:hover .cat i {
+    color: var(--red-color);
+    cursor: pointer;
+}
+
+header .contain .lists li .list {
+    position: absolute;
+    width: 150px;
+    height: fit-content;
+    background-color: var(--white-color);
+    gap: 10px;
+    border-top: 3px solid var(--red-color);
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: var(--trans);
+    padding: 20px;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+}
+
+header .contain .lists li:hover .list {
+    opacity: 1;
+    z-index: 1000;
+    visibility: visible;
+}
+
+header .contain .lists li .list li {
+    color: var(--gray-color);
+}
+
+header .contain .lists li .list li:hover {
+    color: var(--text-color);
+}
+
+header .contain .lists li .list li {
+    font-size: 16px;
+}
+
+header .contain .details {
+    gap: 30px;
+}
+
+header .contain .details div {
+    transition: var(--trans);
+}
+
+header .contain .details div i {
+    font-size: 20px;
+    transition: var(--trans);
+}
+
+header .contain .details div:hover i {
+    color: var(--red-color);
+    cursor: pointer;
+    transform: rotateY(360deg);
+}
+
+header .contain .details div:first-child:hover i {
+    transform: rotateY(180deg);
+}
+
+
+/*Responsive*/
+
+@media (max-width:1200px) {
+    header .contain {
+        gap: 25px;
+        height: 95px;
+    }
+    header .contain .logo picture {
+        width: 200px;
+    }
+    header .contain .lists {
+        gap: 30px;
+    }
+    header .contain .lists>li .cat {
+        gap: 6px;
+    }
+    header .contain .lists>li .cat::before {
+        border-radius: 25px;
+        padding: 6px 18px;
+    }
+    header .contain .lists>li .cat i {
+        font-size: 14px;
+    }
+    header .contain .lists>li .cat a {
+        font-size: 16px;
+    }
+    header .contain .lists li .list {
+        width: 140px;
+        gap: 10px;
+        padding: 18px;
+    }
+    header .contain .lists li .list li {
+        font-size: 15px;
+    }
+    header .contain .details {
+        gap: 25px;
+    }
+    header .contain .details div i {
+        font-size: 18px;
+    }
+}
+
+@media (max-width:992px) {
+    header .contain {
+        height: 120px;
+        justify-content: center;
+    }
+    header .contain .logo picture {
+        width: 240px;
+    }
+    header .contain .lists {
+        display: none;
+    }
+    header .contain .details {
+        display: none;
+    }
+}
+
+@media (max-width:768px) {
+    header .contain {
+        height: 100px;
+    }
+    header .contain .logo picture {
+        width: 220px;
+    }
+}
+
+@media (max-width:640px) {
+    header .contain {
+        height: 80px;
+    }
+    header .contain .logo picture {
+        width: 200px;
+    }
+}
