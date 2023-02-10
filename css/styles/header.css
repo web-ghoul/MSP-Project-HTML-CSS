@@ -4,33 +4,33 @@ header .contain {
     height: 100px;
 }
 
-header .contain .logo picture {
+header .contain>.logo picture {
     width: 240px;
 }
 
-header .contain .logo picture img {
+header .contain>.logo picture img {
     width: 100%;
 }
 
-header .contain .lists {
+header .contain>.lists {
     gap: 50px;
     height: 100%;
 }
 
-header .contain .lists>li {
+header .contain>.lists>li {
     position: relative;
     color: var(--black-color);
     height: 100%;
     cursor: pointer;
 }
 
-header .contain .lists>li .cat {
+header .contain>.lists>li .cat {
     z-index: 100;
     gap: 7px;
     position: relative;
 }
 
-header .contain .lists>li .cat::before {
+header .contain>.lists>li .cat::before {
     content: "";
     position: absolute;
     background-color: var(--main-color);
@@ -43,33 +43,33 @@ header .contain .lists>li .cat::before {
     padding: 6px 20px;
 }
 
-header .contain .lists>li:hover .cat::before {
+header .contain>.lists>li:hover .cat::before {
     transform: rotateX(0);
 }
 
-header .contain .lists>li .cat i {
+header .contain>.lists>li .cat i {
     font-size: 15px;
     transition: var(--trans);
 }
 
-header .contain .lists>li:hover .cat i {
+header .contain>.lists>li:hover .cat i {
     transform: rotate(-180deg);
 }
 
-header .contain .lists>li .cat a {
+header .contain>.lists>li .cat a {
     font-size: 18px;
     font-weight: 500;
     text-transform: uppercase;
 }
 
-header .contain .lists>li .cat:hover,
-header .contain .lists>li:hover .cat a,
-header .contain .lists>li:hover .cat i {
+header .contain>.lists>li .cat:hover,
+header .contain>.lists>li:hover .cat a,
+header .contain>.lists>li:hover .cat i {
     color: var(--red-color);
     cursor: pointer;
 }
 
-header .contain .lists li .list {
+header .contain>.lists li .list {
     position: absolute;
     width: 150px;
     height: fit-content;
@@ -86,21 +86,21 @@ header .contain .lists li .list {
     visibility: hidden;
 }
 
-header .contain .lists li:hover .list {
+header .contain>.lists li:hover .list {
     opacity: 1;
     z-index: 1000;
     visibility: visible;
 }
 
-header .contain .lists li .list li {
+header .contain>.lists li .list li {
     color: var(--gray-color);
 }
 
-header .contain .lists li .list li:hover {
+header .contain>.lists li .list li:hover {
     color: var(--text-color);
 }
 
-header .contain .lists li .list li {
+header .contain>.lists li .list li {
     font-size: 16px;
 }
 
@@ -125,6 +125,16 @@ header .contain .details div:hover i {
 
 header .contain .details div:first-child:hover i {
     transform: rotateY(180deg);
+}
+
+header .contain .res {
+    display: none;
+}
+
+.visible {
+    opacity: 1 !important;
+    height: fit-content !important;
+    z-index: 1 !important;
 }
 
 
@@ -173,33 +183,148 @@ header .contain .details div:first-child:hover i {
 @media (max-width:992px) {
     header .contain {
         height: 120px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
         justify-content: center;
+        height: fit-content;
+        gap: 0;
+    }
+    header .contain .logo {
+        justify-content: center;
+        padding: 20px;
     }
     header .contain .logo picture {
         width: 240px;
     }
-    header .contain .lists {
+    header .contain>.lists {
         display: none;
     }
-    header .contain .details {
+    header .contain>.details {
         display: none;
+    }
+    header .contain .res {
+        display: flex;
+        background-color: var(--main-color);
+        padding: 20px;
+        position: relative;
+    }
+    header .contain .res .lists.active {
+        opacity: 1;
+        z-index: 200;
+        visibility: visible;
+    }
+    header .contain .res .lists {
+        position: absolute;
+        background-color: var(--white-color);
+        top: 100%;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+        gap: 0;
+        transition: var(--trans);
+        opacity: 0;
+        visibility: hidden;
+    }
+    header .contain .res .lists li .cat {
+        width: 100%;
+        padding: 20px;
+        background-color: var(--white-color);
+        z-index: 100;
+    }
+    header .contain .res .lists li .cat.active,
+    header .contain .res .lists li .cat:hover {
+        cursor: pointer;
+        background-color: var(--main-color);
+    }
+    header .contain .res .lists li .cat.active a,
+    header .contain .res .lists li .cat:hover a {
+        color: var(--red-color);
+    }
+    header .contain .res .lists li .cat i {
+        transition: var(--trans);
+    }
+    header .contain .res .lists li .cat.active i,
+    header .contain .res .lists li .cat:hover i {
+        transform: rotate(-180deg);
+        color: var(--red-color);
+    }
+    header .contain .res .lists .list {
+        height: 0;
+        opacity: 0;
+        padding: 0;
+        z-index: -1;
+        transition: var(--trans);
+        width: 100%;
+    }
+    header .contain .res .lists .list li {
+        padding: 5px 40px;
+        color: var(--black-alt-color);
+        transition: var(--trans);
+    }
+    header .contain .res .lists .list li:hover {
+        color: var(--black-color);
+        cursor: pointer;
+    }
+    header .contain .res>i {
+        font-size: 20px;
+        transition: var(--trans);
+    }
+    header .contain .res>i:hover {
+        color: var(--red-color);
+        cursor: pointer;
+    }
+    header .contain .res .details {
+        gap: 25px;
+    }
+    header .contain .res .details div i {
+        font-size: 18px;
     }
 }
 
 @media (max-width:768px) {
-    header .contain {
-        height: 100px;
+    header .contain .logo a {
+        width: 200px;
     }
-    header .contain .logo picture {
-        width: 220px;
+    header .contain .res {
+        padding: 15px;
+    }
+    header .contain .res .lists li .cat {
+        padding: 15px;
+    }
+    header .contain .res .lists .list li {
+        padding: 5px 30px;
+    }
+    header .contain .res>i {
+        font-size: 18px;
+    }
+    header .contain .res .details {
+        gap: 20px;
+    }
+    header .contain .res .details div i {
+        font-size: 16px;
     }
 }
 
 @media (max-width:640px) {
-    header .contain {
-        height: 80px;
+    header .contain .logo a {
+        width: 180px;
     }
-    header .contain .logo picture {
-        width: 200px;
+    header .contain .res {
+        padding: 10px;
+    }
+    header .contain .res .lists li .cat {
+        padding: 10px;
+    }
+    header .contain .res .lists .list li {
+        padding: 5px 20px;
+    }
+    header .contain .res>i {
+        font-size: 14px;
+    }
+    header .contain .res .details {
+        gap: 15px;
+    }
+    header .contain .res .details div i {
+        font-size: 14px;
     }
 }

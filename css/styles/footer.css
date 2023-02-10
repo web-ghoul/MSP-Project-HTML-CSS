@@ -81,7 +81,7 @@ footer .contain .sign-up form input[type="submit"]:hover {
 
 footer .contain article {
     background-color: var(--black-color);
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
     padding: 40px 80px 80px;
 }
 

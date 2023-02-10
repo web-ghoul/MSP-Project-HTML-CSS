@@ -13,6 +13,7 @@
     --white-color: #fff;
     --gray-color: #666;
     --gray-alt-color: #ccc;
+    --gray-alt-1-color: #f5f5f5;
     --black-color: #111;
     --black-alt-color: #333;
 }
@@ -46,6 +47,10 @@ body {
 
 .j-c-e {
     justify-content: flex-end;
+}
+
+.j-c-str {
+    justify-content: stretch;
 }
 
 .j-c-bet {
@@ -152,6 +157,22 @@ main .container {
 }
 
 
+/*Directory Section*/
+
+.directory .contain {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.directory .contain span {
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    width: 100%;
+    background-color: var(--gray-alt-1-color);
+    padding: 15px;
+}
+
+
 /* Responsive */
 
 @media (max-width:1200px) {
@@ -169,6 +190,11 @@ main .container {
     }
     .sticky-to-top i {
         font-size: 18px;
+    }
+    .directory .contain span {
+        font-size: 18px;
+        letter-spacing: 2.3px;
+        padding: 12px;
     }
 }
 
@@ -188,6 +214,15 @@ main .container {
     .sticky-to-top i {
         font-size: 16px;
     }
+    .directory .contain {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .directory .contain span {
+        font-size: 16px;
+        letter-spacing: 2px;
+        padding: 10px;
+    }
 }
 
 @media (max-width:768px) {
@@ -203,6 +238,13 @@ main .container {
         height: 35px;
     }
     .sticky-to-top i {
+        font-size: 15px;
+    }
+    .directory .contain {
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+    .directory .contain span {
         font-size: 15px;
     }
 }
@@ -221,5 +263,12 @@ main .container {
     }
     .sticky-to-top i {
         font-size: 12px;
+    }
+    .directory .contain {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .directory .contain span {
+        font-size: 14px;
     }
 }
