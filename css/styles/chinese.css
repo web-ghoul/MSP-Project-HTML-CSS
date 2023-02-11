@@ -1,0 +1,497 @@
+.contain .chinese-img img 
+{
+   margin-left: 130px;
+   margin-top: 40px;
+   width: 100%;
+  
+}
+.contain h1 , pre{
+    margin-left: 130px;    
+}
+.contain pre{
+    margin-left: 130px;
+    font-size: 15px;
+    color: #666;
+    color: var(--gray-color);
+}
+/*products*/
+.products
+{   
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+}
+.item-one img ,
+.item-four img ,
+.item-seven img 
+{
+    width:292px;
+    height: 400px;
+    margin-left: 90px;
+    margin-top: 60px;
+
+}
+.item-two img ,
+.item-three img ,
+.item-five img ,
+.item-six img ,
+.item-eight img ,
+.item-nine img 
+{
+    width:292px;
+    height: 400px;
+    margin-top: 60px;
+
+}
+
+/* product-one */
+
+.product-one:hover
+{
+      cursor: pointer;
+      transform: scale(0.9);     
+}
+.product-one h1{
+    margin-left: 180px;  
+    font: 800 15px/20px "Mulish",Helvetica,sans-serif;
+    color:var(--black-gray-color);
+    margin-top: 14px;
+}
+.product-one h1:hover
+{
+   
+    color:var(--red-color);
+    cursor: pointer;
+}
+.product-one .basic-price
+{
+    color:var(--red-color);
+    margin-left: 150px;
+}
+.product-one .discount-price ,
+.before-discount
+{
+    margin-left: 12px;
+}
+.product-one .discount-price
+{
+    font-size: 13px;
+    color: var(--black-color);
+}
+.product-one .before-discount
+{
+    color: var(--gray-color);
+    
+}   
+.item-one button 
+{
+   border-radius: 30px;
+   background-color: var(--black-color); 
+   display: block;
+   margin-left: 150px; 
+   margin-top: 14px;
+   height: 50px;
+   width: 160px;
+  
+} 
+.item-one button:hover
+{
+   background-color: var(--main-color);
+}
+.item-one button span i
+{
+    color: var(--white-color);  
+    margin-left: 20px;
+    display: inline-block;
+}
+.item-one button span i:hover
+{
+   color: var(--black-color);
+}
+
+.item-one button span h2
+{
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -15px;
+    margin-left: 25px;
+    color: var(--white-color);
+}
+.item-one button span h2:hover
+{
+    color: var(--black-color);
+}
+
+/* product-two */
+
+.product-two:hover
+{
+      cursor: pointer;
+      transform: scale(0.9);     
+}
+.product-two h1{
+    margin-left: 80px;  
+    font: 800 15px/20px "Mulish",Helvetica,sans-serif;
+    color:var(--black-gray-color);
+    margin-top: 14px;
+}
+.product-two h1:hover
+{
+   
+    color:var(--red-color);
+    cursor: pointer;
+}
+.product-two .basic-price
+{
+    color:var(--red-color);
+    margin-left: 60px;
+}
+.product-two .discount-price ,
+.before-discount
+{
+    margin-left: 12px;
+}
+.product-two .discount-price
+{
+    font-size: 13px;
+    color: var(--black-color);
+}
+.product-two .before-discount
+{
+    color: var(--gray-color);
+    
+}   
+.item-two button 
+{
+   border-radius: 30px;
+   background-color: var(--black-color); 
+   display: block;
+   margin-left: 60px; 
+   margin-top: 14px;
+   height: 50px;
+   width: 160px;
+  
+} 
+.item-two button:hover
+{
+   background-color: var(--main-color);
+}
+.item-two button span i
+{
+    color: var(--white-color);  
+    margin-left: 20px;
+    display: inline-block;
+}
+.item-two button span i:hover
+{
+   color: var(--black-color);
+}
+
+.item-two button span h2
+{
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -15px;
+    margin-left: 25px;
+    color: var(--white-color);
+}
+.item-two button span h2:hover
+{
+    color: var(--black-color);
+}
+/* product-three*/
+.product-three:hover
+{
+      cursor: pointer;
+      transform: scale(0.9);     
+}
+.product-three h1{
+    margin-left: 50px;  
+    font: 800 15px/20px "Mulish",Helvetica,sans-serif;
+    color:var(--black-gray-color);
+    margin-top: 14px;
+}
+.product-three h1:hover
+{
+   
+    color:var(--red-color);
+    cursor: pointer;
+}
+.product-three .basic-price
+{
+    color:var(--red-color);
+    margin-left: 70px;
+}
+.product-three .discount-price ,
+.before-discount
+{
+    margin-left: 12px;
+}
+.product-three .discount-price
+{
+    font-size: 13px;
+    color: var(--black-color);
+}
+.product-three .before-discount
+{
+    color: var(--gray-color);
+    
+}   
+.item-three button 
+{
+   border-radius: 30px;
+   background-color: var(--black-color); 
+   display: block;
+   margin-left: 60px; 
+   margin-top: 14px;
+   height: 50px;
+   width: 160px;
+  
+} 
+.item-three button:hover
+{
+   background-color: var(--main-color);
+}
+.item-three button span i
+{
+    color: var(--white-color);  
+    margin-left: 20px;
+    display: inline-block;
+}
+.item-three button span i:hover
+{
+   color: var(--black-color);
+}
+
+.item-three button span h2
+{
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -15px;
+    margin-left: 25px;
+    color: var(--white-color);
+}
+.item-three button span h2:hover
+{
+    color: var(--black-color);
+}
+
+/* product-four*/
+.product-four:hover
+{
+      cursor: pointer;
+      transform: scale(0.9);     
+}
+.product-four h1{
+    margin-left: 117px;  
+    font: 800 15px/20px "Mulish",Helvetica,sans-serif;
+    color:var(--black-gray-color);
+    margin-top: 14px;
+}
+.product-four h1:hover
+{
+   
+    color:var(--red-color);
+    cursor: pointer;
+}
+.product-four .basic-price
+{
+    color:var(--red-color);
+    margin-left: 190px;
+} 
+.item-four button 
+{
+   border-radius: 30px;
+   background-color: var(--black-color); 
+   display: block;
+   margin-left: 130px; 
+   margin-top: 14px;
+   height: 50px;
+   width: 160px;
+  
+} 
+.item-four button:hover
+{
+   background-color: var(--main-color);
+}
+.item-four button span i
+{
+    color: var(--white-color);  
+    margin-left: 20px;
+    display: inline-block;
+}
+.item-four button span i:hover
+{
+   color: var(--black-color);
+}
+
+.item-four button span h2
+{
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -15px;
+    margin-left: 25px;
+    color: var(--white-color);
+}
+.item-four button span h2:hover
+{
+    color: var(--black-color);
+}
+
+/* product-five */
+.product-five:hover
+{
+      cursor: pointer;
+      transform: scale(0.9);    
+}
+.product-five h1{
+    margin-left: 80px;  
+    font: 800 15px/20px "Mulish",Helvetica,sans-serif;
+    color:var(--black-gray-color);
+    margin-top: 14px;
+}
+.product-five h1:hover
+{   
+    color:var(--red-color);
+    cursor: pointer;
+}
+.product-five .basic-price
+{
+    color:var(--red-color);
+    margin-left: 75px;
+}
+.product-five .discount-price ,
+.before-discount
+{
+    margin-left: 12px;
+}
+.product-five .discount-price
+{
+    font-size: 13px;
+    color: var(--black-color);
+}
+.product-five .before-discount
+{
+    color: var(--gray-color);
+    
+}   
+.item-five button 
+{
+   border-radius: 30px;
+   background-color: var(--black-color); 
+   display: block;
+   margin-left: 70px; 
+   margin-top: 14px;
+   height: 50px;
+   width: 160px;
+  
+} 
+.item-five button:hover
+{
+   background-color: var(--main-color);
+}
+.item-five button span i
+{
+    color: var(--white-color);  
+    margin-left: 20px;
+    display: inline-block;
+}
+.item-five button span i:hover
+{
+   color: var(--black-color);
+}
+
+.item-five button span h2
+{
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -15px;
+    margin-left: 25px;
+    color: var(--white-color);
+}
+.item-five button span h2:hover
+{
+    color: var(--black-color);
+}
+
+/*product-six*/
+
+.product-six:hover
+{
+      cursor: pointer;
+      transform: scale(0.9);    
+}
+.product-six h1{
+    margin-left: 80px;  
+    font: 800 15px/20px "Mulish",Helvetica,sans-serif;
+    color:var(--black-gray-color);
+    margin-top: 14px;
+}
+.product-six h1:hover
+{   
+    color:var(--red-color);
+    cursor: pointer;
+}
+.product-six .basic-price
+{
+    color:var(--red-color);
+    margin-left: 75px;
+}
+.product-six .discount-price ,
+.before-discount
+{
+    margin-left: 12px;
+}
+.product-six .discount-price
+{
+    font-size: 13px;
+    color: var(--black-color);
+}
+.product-six .before-discount
+{
+    color: var(--gray-color);
+    
+}   
+.item-six button 
+{
+   border-radius: 30px;
+   background-color: var(--black-color); 
+   display: block;
+   margin-left: 70px; 
+   margin-top: 14px;
+   height: 50px;
+   width: 160px;
+  
+} 
+.item-six button:hover
+{
+   background-color: var(--main-color);
+}
+.item-six button span i
+{
+    color: var(--white-color);  
+    margin-left: 20px;
+    display: inline-block;
+}
+.item-six button span i:hover
+{
+   color: var(--black-color);
+}
+
+.item-six button span h2
+{
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: -15px;
+    margin-left: 25px;
+    color: var(--white-color);
+}
+.item-six button span h2:hover
+{
+    color: var(--black-color);
+}
