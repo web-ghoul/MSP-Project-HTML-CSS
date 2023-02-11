@@ -21,8 +21,7 @@
     grid-template-rows: repeat(2,auto);
 }
 .item-one img ,
-.item-four img ,
-.item-seven img 
+.item-four img
 {
     width:292px;
     height: 400px;
@@ -33,9 +32,7 @@
 .item-two img ,
 .item-three img ,
 .item-five img ,
-.item-six img ,
-.item-eight img ,
-.item-nine img 
+.item-six img 
 {
     width:292px;
     height: 400px;
@@ -48,7 +45,7 @@
 .product-one:hover
 {
       cursor: pointer;
-      transform: scale(0.9);     
+     
 }
 .product-one h1{
     margin-left: 180px;  
@@ -103,7 +100,7 @@
     margin-left: 20px;
     display: inline-block;
 }
-.item-one button span i:hover
+.item-one button:hover span i
 {
    color: var(--black-color);
 }
@@ -117,7 +114,7 @@
     margin-left: 25px;
     color: var(--white-color);
 }
-.item-one button span h2:hover
+.item-one button:hover span h2
 {
     color: var(--black-color);
 }
@@ -127,7 +124,7 @@
 .product-two:hover
 {
       cursor: pointer;
-      transform: scale(0.9);     
+      
 }
 .product-two h1{
     margin-left: 80px;  
@@ -182,7 +179,7 @@
     margin-left: 20px;
     display: inline-block;
 }
-.item-two button span i:hover
+.item-two button:hover span i
 {
    color: var(--black-color);
 }
@@ -196,15 +193,16 @@
     margin-left: 25px;
     color: var(--white-color);
 }
-.item-two button span h2:hover
+.item-two button:hover span h2
 {
     color: var(--black-color);
 }
+
 /* product-three*/
 .product-three:hover
 {
       cursor: pointer;
-      transform: scale(0.9);     
+        
 }
 .product-three h1{
     margin-left: 50px;  
@@ -213,8 +211,7 @@
     margin-top: 14px;
 }
 .product-three h1:hover
-{
-   
+{  
     color:var(--red-color);
     cursor: pointer;
 }
@@ -259,7 +256,7 @@
     margin-left: 20px;
     display: inline-block;
 }
-.item-three button span i:hover
+.item-three button:hover span i
 {
    color: var(--black-color);
 }
@@ -273,16 +270,16 @@
     margin-left: 25px;
     color: var(--white-color);
 }
-.item-three button span h2:hover
+
+.item-three button:hover span h2
 {
     color: var(--black-color);
 }
-
 /* product-four*/
 .product-four:hover
 {
       cursor: pointer;
-      transform: scale(0.9);     
+        
 }
 .product-four h1{
     margin-left: 117px;  
@@ -322,7 +319,7 @@
     margin-left: 20px;
     display: inline-block;
 }
-.item-four button span i:hover
+.item-four button:hover span i
 {
    color: var(--black-color);
 }
@@ -336,16 +333,14 @@
     margin-left: 25px;
     color: var(--white-color);
 }
-.item-four button span h2:hover
+.item-four button:hover span h2
 {
     color: var(--black-color);
 }
-
 /* product-five */
 .product-five:hover
 {
       cursor: pointer;
-      transform: scale(0.9);    
 }
 .product-five h1{
     margin-left: 80px;  
@@ -399,7 +394,7 @@
     margin-left: 20px;
     display: inline-block;
 }
-.item-five button span i:hover
+.item-five button:hover span i
 {
    color: var(--black-color);
 }
@@ -413,17 +408,17 @@
     margin-left: 25px;
     color: var(--white-color);
 }
-.item-five button span h2:hover
+.item-five button:hover span h2
 {
     color: var(--black-color);
 }
+
 
 /*product-six*/
 
 .product-six:hover
 {
       cursor: pointer;
-      transform: scale(0.9);    
 }
 .product-six h1{
     margin-left: 80px;  
@@ -477,9 +472,13 @@
     margin-left: 20px;
     display: inline-block;
 }
-.item-six button span i:hover
+.item-six button:hover span i 
 {
    color: var(--black-color);
+}
+.item-six button:hover span h2
+{
+    color: var(--black-color);
 }
 
 .item-six button span h2
@@ -491,7 +490,5 @@
     margin-left: 25px;
     color: var(--white-color);
 }
-.item-six button span h2:hover
-{
-    color: var(--black-color);
-}
+
+/*Responsive*/
