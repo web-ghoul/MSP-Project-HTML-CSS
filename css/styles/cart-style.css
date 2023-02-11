@@ -1,0 +1,80 @@
+.home-box{
+    background-color:var(--gray-alt-1-color);
+    padding: 20px 0;
+    font: 16px/24px "Mulish",Helvetica,sans-serif;
+}
+.project{
+    padding: 2% 0;
+    gap: 2rem;
+}
+.shop1{
+    flex: 64%;
+}
+.left-box,.right-box1 , .right-box2{
+    border: 1px solid #e5e5e5;
+    padding: 1rem 0;
+}
+.left-box h3{
+    font-size: 20px;
+    color: var( --black-alt-color);
+    padding-left: 1.5rem;
+}
+.left-box hr , .right-box1 hr , .right-box2 hr {
+    border-top: 1px solid #e5e5e5;
+    margin: 1rem 0;
+}
+.left-box span{
+    color: var(--gray-color);
+    font-family: 'Mulish',Helvetica,sans-serif;
+    font-size: 14px;
+    padding-left: 1.5rem;
+
+}
+.shop1 div:last-child{
+    font-family: 'Mulish',Helvetica,sans-serif;
+    color: #414141;
+    font-size: .875rem;
+    margin-top: 0.6rem;
+    margin-left: 0.3rem;
+    letter-spacing: 0.1rem;
+}
+.shop2{
+    flex: 34%;
+    font-family: 'Mulish',Helvetica,sans-serif;
+    color: #414141;
+    font-size: .875rem;
+}
+.right-box1 div:first-child ,
+.right-box1 div:nth-child(2) , 
+.right-box1 div:nth-child(3) , 
+.right-box1 div:nth-child(4) ,
+.right-box1 div:nth-child(5){
+    padding: 0 1.5rem;
+}
+.right-box1 div:last-child{
+    margin: 4rem 0 1rem;
+    cursor: not-allowed;
+}
+.right-box1 div:last-child span{
+    background-color: #666666;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 2.5rem;
+    opacity: 0.7;
+    
+}
+.right-box2{
+    margin-top: 1.5rem;
+    border-radius: 1rem;
+}
+.right-box2 span{
+    padding-left: 7%;
+}
+@media screen and (max-width:992px){
+    .project{
+        display: block;
+    }
+    .shop1 div:last-child{
+        margin-bottom: 1.5%;
+    }
+}
