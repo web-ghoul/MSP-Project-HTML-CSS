@@ -1,3 +1,26 @@
+// var swiper = new Swiper(".mySwiper", {
+//     slidesPerView: 1,
+//     spaceBetween: 30,
+//     loop: true,
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//     autoplay:{
+//         delay: 3500,
+//         disableOnInteraction:false,
+//     },
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//   });
+
+
+
+
+
+
 const boxOne = document.querySelector(".testimonial .contain .boxes .box.one")
 const boxTwo = document.querySelector(".testimonial .contain .boxes .box.two")
 const boxThree = document.querySelector(".testimonial .contain .boxes .box.three")
