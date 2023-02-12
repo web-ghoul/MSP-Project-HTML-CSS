@@ -6,21 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- website Icon -->
-    <link rel="icon" href="../images//logo/logo-1.png">
+    <link rel="icon" href="../images/logo/logo-1.png">
     <!-- Font // font-family: 'Oswald', sans-serif;-->
-    <link rel="stylesheet" href="../css//fonts//oswald.css">
+    <link rel="stylesheet" href="../css/fonts/oswald.css">
     <!-- Font // font-family: 'Great Vibes', cursive; -->
-    <link rel="stylesheet" href="../css//fonts//great-vibes.css">
+    <link rel="stylesheet" href="../css/fonts/great-vibes.css">
+    <!-- Font // font-family: 'Mulish', sans-serif; -->
+    <link rel="stylesheet" href="../css/fonts/mulish.css">
     <!-- Framework -->
-    <link rel="stylesheet" href="../css//styles//framework.css">
+    <link rel="stylesheet" href="../css/styles/framework.css">
     <!-- CSS File -->
-    <link rel="stylesheet" href="../css//styles//home.css">
+    <link rel="stylesheet" href="../css/styles/home.css">
     <!-- Fontawesome -->
-    <link rel="stylesheet" href="./fontawesome//css/all.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.css">
     <!-- Header File CSS -->
-    <link rel="stylesheet" href="../css//styles//header.css">
+    <link rel="stylesheet" href="../css/styles/header.css">
+    <!--Sign in File CSS-->
+    <link rel="stylesheet" href="../css/styles/sign-in.css">
     <!-- Footer File CSS -->
-    <link rel="stylesheet" href="../css//styles//footer.css">
+    <link rel="stylesheet" href="../css/styles/footer.css">
     <title>Home</title>
 </head>
 
@@ -33,7 +37,7 @@
                     <div class="logo flex j-c-s a-i-c">
                         <a href="../index.html">
                             <picture>
-                                <img src="../images//logo/logo.jpg" alt="">
+                                <img src="../images/logo/logo.jpg" alt="">
                             </picture>
                         </a>
                     </div>
@@ -92,7 +96,17 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="profile flex j-c-c a-i-c">
-                            <i class="fa-regular fa-user"></i>
+                            <div class="icon flex j-c-c a-i-c">
+                                <i class="fa-regular fa-user"></i>
+                            </div>
+                            <ul class="list grid j-c-s a-i-c">
+                                <li>
+                                    <a href="./sign-in.html">Sign in</a>
+                                </li>
+                                <li>
+                                    <a href="./sign-up.html">Sign up</a>
+                                </li>
+                            </ul>
                         </div>
                         <div class="cart flex j-c-c a-i-c">
                             <i class="fa-solid fa-cart-shopping"></i>
@@ -155,7 +169,17 @@
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </div>
                             <div class="profile flex j-c-c a-i-c">
-                                <i class="fa-regular fa-user"></i>
+                                <div class="icon flex j-c-c a-i-c">
+                                    <i class="fa-regular fa-user"></i>
+                                </div>
+                                <ul class="list grid j-c-s a-i-c">
+                                    <li>
+                                        <a href="./sign-in.html">Sign in</a>
+                                    </li>
+                                    <li>
+                                        <a href="./sign-up.html">Sign up</a>
+                                    </li>
+                                </ul>
                             </div>
                             <div class="cart flex j-c-c a-i-c">
                                 <i class="fa-solid fa-cart-shopping"></i>
@@ -166,15 +190,47 @@
             </header>
             <!--End Header-->
 
+            <!--Start Directory Section-->
             <section class="directory">
                 <div class="contain flex a-i-c j-c-c t-a-c">
-                    <span>Home / Log In To Your Account</span>
+                    <span> <a href="../index.html">Home</a> / Log In To Your Account</span>
+                </div>
+            </section>
+            <!--End Directory Section-->
+
+            <section class="sign-in">
+                <div class="contain grid j-c-str a-i-c">
+                    <h3>LOG IN TO YOUR ACCOUNT</h3>
+                    <form action="POST" class="grid j-c-str a-i-c">
+                        <article class="grid j-c-c a-i-c">
+                            <div class="email flex j-c-e a-i-c">
+                                <label for="">Email</label>
+                                <input type="email" required>
+                            </div>
+                            <div class="pass flex j-c-e a-i-c">
+                                <label for="">Password</label>
+                                <div class="pass-in">
+                                    <input type="password" required>
+                                    <button type="button" id="showHide">Show</button>
+                                </div>
+                            </div>
+                        </article>
+                        <a href="" class="center t-a-c">Forgot your password?</a>
+                        <input type="submit" class="center" value="Sign in">
+                        <div class="account flex j-c-c a-i-c">
+                            <span>No account?</span>
+                            <a href="./sign-up.html">Create one here</a>
+                        </div>
+                    </form>
                 </div>
             </section>
 
             <!--Start Footer-->
             <footer>
                 <div class="contain">
+                    <picture>
+                        <img src="../images/main/vegetables.png" alt="">
+                    </picture>
                     <div class="sign-up grid j-c-c a-i-c">
                         <div class="text grid j-c-s a-i-c">
                             <h3 class="flex j-c-s a-i-c">
@@ -242,6 +298,9 @@
                         </div>
                     </article>
                     <div class="foot grid j-c-c a-i-c">
+                        <picture>
+                            <img src="../images/footer/cms-bg-pattern.png" alt="">
+                        </picture>
                         <span class="t-a-c flex j-c-c a-i-c">© 2023 - Ecommerce software by PrestaShop™</span>
                         <div class="imgs flex j-c-c a-i-c">
                             <picture>
@@ -276,6 +335,9 @@
 
     <!--Sticky-to-top Script-->
     <script src="../js/sticky.js"></script>
+
+    <!--Sign-in Script-->
+    <script src="../js/sign-in.js"></script>
 </body>
 
 </html>

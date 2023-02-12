@@ -28,6 +28,7 @@ header .contain>.lists>li .cat {
     z-index: 100;
     gap: 7px;
     position: relative;
+    font-family: 'Oswald', sans-serif;
 }
 
 header .contain>.lists>li .cat::before {
@@ -94,27 +95,81 @@ header .contain>.lists li:hover .list {
 
 header .contain>.lists li .list li {
     color: var(--gray-color);
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
 }
 
 header .contain>.lists li .list li:hover {
-    color: var(--text-color);
-}
-
-header .contain>.lists li .list li {
-    font-size: 16px;
+    color: var(--black-color);
 }
 
 header .contain .details {
     gap: 30px;
+    height: 100%;
 }
 
 header .contain .details div {
     transition: var(--trans);
+    position: relative;
+    height: 100%;
+}
+
+header .contain .details div .list {
+    background-color: var(--white-color);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    top: 100%;
+    z-index: 200;
+    gap: 0;
+    height: 0;
+    transition: var(--trans);
+}
+
+header .contain .details div .list.active {
+    height: 100% !important;
+    border-top: 3px solid var(--red-color);
+}
+
+header .contain .details div .list li {
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Mulish', sans-serif;
+    transition: var(--trans);
+    z-index: -1;
+    visibility: hidden;
+}
+
+header .contain .details div .list li.active {
+    visibility: visible;
+    z-index: 1;
+}
+
+header .contain .details div .list li a {
+    color: transparent;
+}
+
+header .contain .details div .list li.active a {
+    color: var(--gray-color) !important;
+}
+
+header .contain .details div .list li:hover {
+    color: var(--black-color);
 }
 
 header .contain .details div i {
     font-size: 20px;
     transition: var(--trans);
+}
+
+header .contain .details div:hover {
+    cursor: pointer;
+}
+
+header .contain .details div.active i {
+    color: var(--red-color);
+    cursor: pointer;
 }
 
 header .contain .details div:hover i {
@@ -202,11 +257,18 @@ header .contain .res {
     header .contain>.details {
         display: none;
     }
+    header .contain .details div .list {
+        width: 120px;
+    }
+    header .contain .details div .list li {
+        font-size: 14px;
+    }
     header .contain .res {
         display: flex;
         background-color: var(--main-color);
-        padding: 20px;
+        padding: 0 20px;
         position: relative;
+        height: 50px;
     }
     header .contain .res .lists.active {
         opacity: 1;
@@ -275,9 +337,16 @@ header .contain .res {
     }
     header .contain .res .details {
         gap: 25px;
+        height: 100%;
     }
     header .contain .res .details div i {
         font-size: 18px;
+    }
+    header .contain .res .details div .list li:hover {
+        color: var(--black-color);
+    }
+    header .contain .res .details div .list.active {
+        height: 200% !important;
     }
 }
 

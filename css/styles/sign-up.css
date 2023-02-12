@@ -1,0 +1,343 @@
+.sign-up .contain {
+    gap: 10px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.sign-up .contain h3 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.sign-up .contain .form {
+    gap: 30px;
+    padding: 20px;
+    border: 1px solid var(--gray-alt-2-color);
+}
+
+.sign-up .contain .form h5 {
+    font-size: 18px;
+    color: var(--gray-alt-color);
+}
+
+.sign-up .contain .form h5 a {
+    transition: var(--trans);
+    color: var(--gray-alt-color);
+}
+
+.sign-up .contain .form h5 a:hover {
+    color: var(--black-color);
+}
+
+.sign-up .contain .form form {
+    gap: 20px;
+}
+
+.sign-up .contain .form form div {
+    gap: 20px;
+}
+
+.sign-up .contain .form form div.in div p {
+    font-size: 14px;
+}
+
+.sign-up .contain .form form div input[type="radio"] {
+    position: relative;
+    width: 0;
+}
+
+.sign-up .contain .form form div input[type="radio"]::after {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    border: 1px solid var(--black-color);
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: var(--white-color);
+}
+
+.sign-up .contain .form form div input[type="radio"]::before {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 11;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: var(--black-color);
+    transition: var(--trans);
+    opacity: 0;
+}
+
+.sign-up .contain .form form div input[type="radio"].active::before {
+    opacity: 1;
+}
+
+.sign-up .contain .form form .gender .sex label:hover {
+    cursor: pointer;
+}
+
+.sign-up .contain .form form .gender .sex {
+    transform: translateX(8px);
+}
+
+.sign-up .contain .form form div input:not([type="radio"]) {
+    padding: 10px;
+    border: 1px solid var(--gray-alt-2-color);
+    width: 500px;
+    font-size: 18px;
+}
+
+.sign-up .contain .form form div label {
+    font-size: 20px;
+}
+
+.sign-up .contain .form form div .pass {
+    position: relative;
+}
+
+.sign-up .contain .form form div .pass input {
+    padding-right: 100px;
+}
+
+.sign-up .contain .form form div .pass button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--gray-color);
+    padding: 10px 20px;
+    color: var(--white-color);
+    font-size: 18px;
+}
+
+.sign-up .contain .form form div.in input[type="date"] {
+    text-transform: uppercase;
+}
+
+.sign-up .contain .form .btn button {
+    padding: 10px 30px;
+    font-size: 20px;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    transition: var(--trans);
+    border-radius: 30px;
+}
+
+.sign-up .contain .form .btn button:hover {
+    background-color: var(--main-color);
+    color: var(--black-color);
+}
+
+@media (max-width:1200px) {
+    .sign-up .contain {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .sign-up .contain h3 {
+        font-size: 25px;
+    }
+    .sign-up .contain .form {
+        gap: 25px;
+        padding: 18px;
+    }
+    .sign-up .contain .form h5 {
+        font-size: 16px;
+    }
+    .sign-up .contain .form form {
+        gap: 15px;
+    }
+    .sign-up .contain .form form div {
+        gap: 15px;
+    }
+    .sign-up .contain .form form div.in div p {
+        font-size: 12px;
+    }
+    .sign-up .contain .form form div input[type="radio"]::after {
+        width: 12px;
+        height: 12px;
+    }
+    .sign-up .contain .form form div input[type="radio"]::before {
+        width: 9px;
+        height: 9px;
+    }
+    .sign-up .contain .form form div input:not([type="radio"]) {
+        padding: 8px;
+        width: 500px;
+        font-size: 16px;
+    }
+    .sign-up .contain .form form div label {
+        font-size: 18px;
+    }
+    .sign-up .contain .form form div .pass input {
+        padding-right: 80px;
+    }
+    .sign-up .contain .form form div .pass button {
+        padding: 8px 18px;
+        font-size: 16px;
+    }
+    .sign-up .contain .form .btn button {
+        padding: 8px 25px;
+        font-size: 18px;
+        border-radius: 25px;
+    }
+}
+
+@media (max-width:992px) {
+    .sign-up .contain {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .sign-up .contain h3 {
+        font-size: 22px;
+    }
+    .sign-up .contain .form {
+        gap: 20px;
+        padding: 15px;
+    }
+    .sign-up .contain .form h5 {
+        font-size: 14px;
+    }
+    .sign-up .contain .form form {
+        gap: 12px;
+    }
+    .sign-up .contain .form form div {
+        gap: 12px;
+    }
+    .sign-up .contain .form form div.in div p {
+        font-size: 10px;
+    }
+    .sign-up .contain .form form div input[type="radio"]::after {
+        width: 11px;
+        height: 11px;
+    }
+    .sign-up .contain .form form div input[type="radio"]::before {
+        width: 7px;
+        height: 7px;
+    }
+    .sign-up .contain .form form div input:not([type="radio"]) {
+        padding: 6px;
+        width: 400px;
+        font-size: 14px;
+    }
+    .sign-up .contain .form form div label {
+        font-size: 16px;
+    }
+    .sign-up .contain .form form div .pass input {
+        padding-right: 60px;
+    }
+    .sign-up .contain .form form div .pass button {
+        padding: 6px 15px;
+        font-size: 14px;
+    }
+    .sign-up .contain .form .btn button {
+        padding: 6px 20px;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+}
+
+@media (max-width:768px) {
+    .sign-up .contain {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .sign-up .contain h3 {
+        font-size: 20px;
+    }
+    .sign-up .contain .form {
+        gap: 15px;
+        padding: 10px;
+    }
+    .sign-up .contain .form h5 {
+        font-size: 12px;
+    }
+    .sign-up .contain .form form {
+        gap: 10px;
+    }
+    .sign-up .contain .form form div {
+        gap: 10px;
+    }
+    .sign-up .contain .form form div.in div p {
+        font-size: 8px;
+    }
+    .sign-up .contain .form form div input[type="radio"]::after {
+        width: 9px;
+        height: 9px;
+    }
+    .sign-up .contain .form form div input[type="radio"]::before {
+        width: 5px;
+        height: 5px;
+    }
+    .sign-up .contain .form form div input:not([type="radio"]) {
+        padding: 5px;
+        width: 300px;
+        font-size: 12px;
+    }
+    .sign-up .contain .form form div label {
+        font-size: 14px;
+    }
+    .sign-up .contain .form form div .pass input {
+        padding-right: 50px;
+    }
+    .sign-up .contain .form form div .pass button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+    .sign-up .contain .form .btn button {
+        padding: 5px 15px;
+        font-size: 14px;
+        border-radius: 15px;
+    }
+}
+
+@media (max-width:640px) {
+    .sign-up .contain {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .sign-up .contain h3 {
+        font-size: 18px;
+    }
+    .sign-up .contain .form {
+        gap: 10px;
+        padding: 8px;
+    }
+    .sign-up .contain .form h5 {
+        font-size: 10px;
+    }
+    .sign-up .contain .form form div.in div p {
+        font-size: 6px;
+    }
+    .sign-up .contain .form form div input[type="radio"]::after {
+        width: 8px;
+        height: 8px;
+    }
+    .sign-up .contain .form form div input[type="radio"]::before {
+        width: 4px;
+        height: 4px;
+    }
+    .sign-up .contain .form form div input:not([type="radio"]) {
+        width: 200px;
+        font-size: 10px;
+    }
+    .sign-up .contain .form form div label {
+        font-size: 12px;
+    }
+    .sign-up .contain .form form div .pass input {
+        padding-right: 40px;
+    }
+    .sign-up .contain .form form div .pass button {
+        padding: 5px;
+        font-size: 10px;
+    }
+    .sign-up .contain .form .btn button {
+        padding: 4px 10px;
+        font-size: 12px;
+    }
+}

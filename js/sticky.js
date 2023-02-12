@@ -1,4 +1,5 @@
 const sticky = document.getElementById('sticky')
+
 window.onscroll = () => {
     if (window.scrollY > 100) {
         sticky.classList.remove('hide')
@@ -6,6 +7,7 @@ window.onscroll = () => {
         sticky.classList.add('hide')
     }
 }
+
 sticky.addEventListener('click', () => {
     window.scroll({
         top: 0,

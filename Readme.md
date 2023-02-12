@@ -16,23 +16,26 @@ Main Of Html Page :
                 <meta http-equiv="X-UA-Compatible" content="IE=edge">
                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
                 <!-- website Icon -->
-                <link rel="icon" href="../images//logo/logo-1.png">
+                <link rel="icon" href="../images/logo/logo-1.png">
                 <!-- Font // font-family: 'Oswald', sans-serif;-->
-                <link rel="stylesheet" href="../css//fonts//oswald.css">
+                <link rel="stylesheet" href="../css/fonts/oswald.css">
                 <!-- Font // font-family: 'Great Vibes', cursive; -->
-                <link rel="stylesheet" href="../css//fonts//great-vibes.css">
+                <link rel="stylesheet" href="../css/fonts/great-vibes.css">
+                <!-- Font // font-family: 'Mulish', sans-serif; -->
+                <link rel="stylesheet" href="../css/fonts/mulish.css">
                 <!-- Framework -->
-                <link rel="stylesheet" href="../css//styles//framework.css">
+                <link rel="stylesheet" href="../css/styles/framework.css">
                 <!-- CSS File -->
-                <link rel="stylesheet" href="../css//styles//home.css">
+                <link rel="stylesheet" href="../css/styles/home.css">
                 <!-- Fontawesome -->
-                <link rel="stylesheet" href="./fontawesome//css/all.css">
+                <link rel="stylesheet" href="./fontawesome/css/all.css">
                 <!-- Header File CSS -->
-                <link rel="stylesheet" href="../css//styles//header.css">
+                <link rel="stylesheet" href="../css/styles/header.css">
                 <!-- Footer File CSS -->
-                <link rel="stylesheet" href="../css//styles//footer.css">
+                <link rel="stylesheet" href="../css/styles/footer.css">
                 <title>Home</title>
             </head>
+            
             <body>
                 <main>
                     <div class="container grid j-c-c a-i-c">
@@ -175,14 +178,26 @@ Main Of Html Page :
                         </header>
                         <!--End Header-->
 
+                        <!--Start Directory Section-->
+                        <section class="directory">
+                            <div class="contain flex a-i-c j-c-c t-a-c">
+                                <span> <a href="../index.html">Home</a> / Log In To Your Account</span>
+                            </div>
+                        </section>
+                        <!--End Directory Section-->
+
                         <section class="">
                             <div class="contain">
+                                <!--Your Code Here-->
                             </div>
                         </section>
 
                         <!--Start Footer-->
                         <footer>
                             <div class="contain">
+                                <picture>
+                                    <img src="../images/main/vegetables.png" alt="">
+                                </picture>
                                 <div class="sign-up grid j-c-c a-i-c">
                                     <div class="text grid j-c-s a-i-c">
                                         <h3 class="flex j-c-s a-i-c">
@@ -250,6 +265,9 @@ Main Of Html Page :
                                     </div>
                                 </article>
                                 <div class="foot grid j-c-c a-i-c">
+                                    <picture>
+                                        <img src="../images/footer/cms-bg-pattern.png" alt="">
+                                    </picture>
                                     <span class="t-a-c flex j-c-c a-i-c">© 2023 - Ecommerce software by PrestaShop™</span>
                                     <div class="imgs flex j-c-c a-i-c">
                                         <picture>

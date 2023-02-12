@@ -1,0 +1,221 @@
+.sign-in .contain {
+    gap: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: 'Mulish', sans-serif;
+}
+
+.sign-in .contain h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sign-in .contain form {
+    gap: 20px;
+    padding: 20px;
+    border: 1px solid var(--gray-alt-2-color);
+}
+
+.sign-in .contain form article {
+    gap: 20px;
+}
+
+.sign-in .contain form article>div {
+    gap: 30px;
+}
+
+.sign-in .contain form>article>div label {
+    font-size: 20px;
+}
+
+.sign-in .contain form>article>div input {
+    width: 500px;
+    border: 1px solid var(--gray-alt-2-color);
+    padding: 10px 30px;
+    font-size: 18px;
+}
+
+.sign-in .contain form>article>div input[type="password"] {
+    padding: 10px 100px 10px 30px;
+}
+
+.sign-in .contain form>article>div .pass-in {
+    position: relative;
+}
+
+.sign-in .contain form>article>div .pass-in button {
+    position: absolute;
+    background-color: var(--gray-color);
+    color: var(--white-color);
+    padding: 10px;
+    font-size: 18px;
+    right: 0;
+    transition: var(--trans);
+}
+
+.sign-in .contain form>a {
+    font-size: 18px;
+    transition: var(--trans);
+    width: fit-content;
+}
+
+.sign-in .contain form>a:hover {
+    color: var(--main-color);
+}
+
+.sign-in .contain form>input[type="submit"] {
+    background-color: var(--black-color);
+    width: fit-content;
+    padding: 10px 20px;
+    color: var(--white-color);
+    font-size: 20px;
+    border-radius: 30px;
+    transition: var(--trans);
+}
+
+.sign-in .contain form>input[type="submit"]:hover {
+    background-color: var(--main-color);
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+.sign-in .contain form>div.account {
+    font-size: 20px;
+    gap: 10px;
+    padding-top: 20px;
+    position: relative;
+}
+
+.sign-in .contain form>div.account a {
+    transition: var(--trans);
+}
+
+.sign-in .contain form>div.account a:hover {
+    color: var(--main-color);
+}
+
+.sign-in .contain form>div.account::before {
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 0;
+    position: absolute;
+    background-color: var(--gray-alt-2-color);
+}
+
+@media (max-width:1200px) {
+    .sign-in .contain h3 {
+        font-size: 28px;
+    }
+    .sign-in .contain form>article>div input {
+        width: 450px;
+    }
+    .sign-in .contain form>input[type="submit"] {
+        border-radius: 25px;
+    }
+}
+
+@media (max-width:992px) {
+    .sign-in .contain {
+        gap: 15px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    .sign-in .contain h3 {
+        font-size: 25px;
+    }
+    .sign-in .contain form {
+        gap: 15px;
+        padding: 15px;
+    }
+    .sign-in .contain form article {
+        gap: 15px;
+    }
+    .sign-in .contain form article>div {
+        gap: 25px;
+    }
+    .sign-in .contain form>article>div label {
+        font-size: 18px;
+    }
+    .sign-in .contain form>article>div input {
+        width: 400px;
+        padding: 8px 20px;
+        font-size: 16px;
+    }
+    .sign-in .contain form>article>div input[type="password"] {
+        padding: 8px 80px 8px 20px;
+    }
+    .sign-in .contain form>article>div .pass-in button {
+        padding: 8px;
+        font-size: 16px;
+    }
+    .sign-in .contain form>a {
+        font-size: 16px;
+    }
+    .sign-in .contain form>input[type="submit"] {
+        padding: 8px 20px;
+        font-size: 18px;
+        border-radius: 25px;
+    }
+    .sign-in .contain form>div.account {
+        font-size: 18px;
+        gap: 8px;
+        padding-top: 15px;
+    }
+}
+
+@media (max-width:768px) {
+    .sign-in .contain {
+        gap: 10px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .sign-in .contain h3 {
+        font-size: 22px;
+    }
+    .sign-in .contain form {
+        gap: 10px;
+        padding: 10px;
+    }
+    .sign-in .contain form article {
+        gap: 20px;
+    }
+    .sign-in .contain form article>div {
+        gap: 0px;
+        display: grid;
+    }
+    .sign-in .contain form>article>div label {
+        font-size: 16px;
+    }
+    .sign-in .contain form>article>div input {
+        width: 400px;
+        padding: 6px 20px;
+        font-size: 14px;
+    }
+    .sign-in .contain form>article>div input[type="password"] {
+        padding: 6px 50px 6px 20px;
+    }
+    .sign-in .contain form>article>div .pass-in button {
+        padding: 6px;
+        font-size: 14px;
+    }
+    .sign-in .contain form>a {
+        font-size: 14px;
+    }
+    .sign-in .contain form>input[type="submit"] {
+        padding: 6px 20px;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+    .sign-in .contain form>div.account {
+        font-size: 16px;
+        gap: 6px;
+        padding-top: 12px;
+    }
+}
+
+@media (max-width:640px) {
+    .sign-in .contain form>article>div input {
+        width: 250px;
+    }
+}

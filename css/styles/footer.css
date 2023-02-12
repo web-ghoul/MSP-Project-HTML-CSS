@@ -3,16 +3,17 @@ footer .contain {
     padding-top: 40px;
 }
 
-footer .contain::before {
-    content: "";
+footer .contain>picture {
     position: absolute;
-    left: -100px;
+    left: -25%;
+    bottom: 0;
     width: 50%;
-    height: 100%;
+    height: 110%;
     z-index: -1;
-    background-image: url("../../../../images/main/vegetables.png");
-    background-repeat: no-repeat;
-    background-size: cover;
+}
+
+footer .contain>picture img {
+    width: 100%;
 }
 
 footer .contain .sign-up {
@@ -29,8 +30,9 @@ footer .contain .sign-up .text {
 footer .contain .sign-up .text h3 {
     gap: 10px;
     font-size: 32px;
-    font-weight: 500;
+    font-weight: 600;
     text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 }
 
 footer .contain .sign-up .text h3 i {
@@ -104,6 +106,7 @@ footer .contain article .info ul li {
     transition: var(--trans);
     position: relative;
     font-weight: normal;
+    font-family: 'Mulish', sans-serif;
 }
 
 footer .contain article .info:not(:last-child) ul li:hover {
@@ -139,15 +142,15 @@ footer .contain .foot {
     background-color: var(--white-color);
 }
 
-footer .contain .foot::before {
-    content: "";
+footer .contain .foot>picture {
     position: absolute;
-    top: -80px;
+    bottom: 55px;
     width: 100%;
     height: 80px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../../../../images/footer/cms-bg-pattern.png");
+}
+
+footer .contain .foot>picture img {
+    width: 100%;
 }
 
 footer .contain .foot span {
@@ -169,7 +172,7 @@ footer .contain .foot .imgs img {
 /*Responsive*/
 
 @media (max-width:1200px) {
-    footer .contain::before {
+    footer .contain>picture {
         width: 70%;
     }
     footer .contain .sign-up {
@@ -219,18 +222,24 @@ footer .contain .foot .imgs img {
     footer .contain .foot {
         gap: 15px;
     }
-    footer .contain .foot::before {
-        top: -60px;
+    footer .contain .foot>picture {
+        top: -20px;
         height: 60px;
     }
     footer .contain .foot span {
         letter-spacing: 1.8px;
         font-size: 18px;
     }
+    footer .contain .foot .imgs {
+        gap: 10px;
+    }
+    footer .contain .foot .imgs picture img {
+        width: 90%;
+    }
 }
 
 @media (max-width:992px) {
-    footer .contain::before {
+    footer .contain>picture {
         width: 80%;
     }
     footer .contain .sign-up {
@@ -315,19 +324,25 @@ footer .contain .foot .imgs img {
     footer .contain .foot {
         gap: 12px;
     }
-    footer .contain .foot::before {
-        top: -40px;
+    footer .contain .foot>picture {
+        top: -15px;
         height: 40px;
     }
     footer .contain .foot span {
         letter-spacing: 1.6px;
         font-size: 16px;
     }
+    footer .contain .foot .imgs {
+        gap: 5px;
+    }
+    footer .contain .foot .imgs picture img {
+        width: 80%;
+    }
 }
 
 @media (max-width:768px) {
-    footer .contain::before {
-        width: 100%;
+    footer .contain>picture {
+        width: 80%;
     }
     footer .contain .sign-up {
         padding: 25px 60px;
@@ -376,13 +391,20 @@ footer .contain .foot .imgs img {
     }
     footer .contain .foot {
         gap: 10px;
+        padding: 20px;
     }
-    footer .contain .foot::before {
-        top: -20px;
-        height: 20px;
+    footer .contain .foot>picture {
+        top: -15px;
+        height: 30px;
     }
     footer .contain .foot span {
         font-size: 12px;
+    }
+    footer .contain .foot .imgs {
+        gap: 2px;
+    }
+    footer .contain .foot .imgs picture img {
+        width: 70%;
     }
 }
 
@@ -436,7 +458,16 @@ footer .contain .foot .imgs img {
     footer .contain article .info:not(:last-child) ul li::before {
         font-size: 4px;
     }
+    footer .contain .foot {
+        padding: 15px;
+    }
     footer .contain .foot span {
         font-size: 10px;
+    }
+    footer .contain .foot .imgs {
+        gap: 0px;
+    }
+    footer .contain .foot .imgs picture img {
+        width: 60%;
     }
 }
