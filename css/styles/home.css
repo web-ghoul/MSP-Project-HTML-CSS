@@ -1,10 +1,10 @@
-.testmonial .contain {
+.testimonial .contain {
     position: relative;
     padding-top: 40px;
     padding-bottom: 40px;
 }
 
-.testmonial .contain::after {
+.testimonial .contain::after {
     content: "";
     position: absolute;
     right: 0;
@@ -17,7 +17,7 @@
     transform: translateY(-50%) rotate(180deg);
 }
 
-.testmonial .contain .slider {
+.testimonial .contain .slider {
     background-color: var(--gray-alt-1-color);
     height: fit-content;
     width: 100%;
@@ -26,7 +26,7 @@
     overflow: hidden;
 }
 
-.testmonial .contain .slider .boxes {
+.testimonial .contain .slider .boxes {
     background-color: var(--gray-alt-1-color);
     position: relative;
     overflow: hidden;
@@ -35,7 +35,7 @@
     height: 180px;
 }
 
-.testmonial .contain .slider .boxes .box {
+.testimonial .contain .slider .boxes .box {
     padding: 40px;
     gap: 20px;
     position: absolute;
@@ -43,35 +43,35 @@
     transition: var(--trans);
 }
 
-.testmonial .contain .slider .boxes .box.one {
+.testimonial .contain .slider .boxes .box.one {
     transform: translateX(0%);
 }
 
-.testmonial .contain .slider .boxes .box.two {
+.testimonial .contain .slider .boxes .box.two {
     transform: translateX(-120%);
 }
 
-.testmonial .contain .slider .boxes .box.three {
+.testimonial .contain .slider .boxes .box.three {
     transform: translateX(-240%);
 }
 
-.testmonial .contain .slider .boxes .box article .info {
+.testimonial .contain .slider .boxes .box article .info {
     gap: 10px;
 }
 
-.testmonial .contain .slider .boxes .box article .info .name {
+.testimonial .contain .slider .boxes .box article .info .name {
     font-size: 22px;
     font-family: 800;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
 }
 
-.testmonial .contain .slider .boxes .box article .info .job {
+.testimonial .contain .slider .boxes .box article .info .job {
     color: var(--black-alt-1-color);
     font-size: 18px;
 }
 
-.testmonial .contain .slider .boxes .box .quote {
+.testimonial .contain .slider .boxes .box .quote {
     background-color: var(--white-color);
     width: 50px;
     height: 50px;
@@ -81,7 +81,7 @@
     border: 1px solid var(--gray-alt-color);
 }
 
-.testmonial .contain .slider .boxes .box .quote::before {
+.testimonial .contain .slider .boxes .box .quote::before {
     content: "";
     position: absolute;
     left: 50%;
@@ -93,7 +93,7 @@
     z-index: -1;
 }
 
-.testmonial .contain .slider .boxes .box p {
+.testimonial .contain .slider .boxes .box p {
     color: var(--black-alt-1-color);
     font-size: 16px;
     width: 60%;
@@ -101,145 +101,145 @@
     line-height: 25px;
 }
 
-.testmonial .contain .slider .boxes .box article {
+.testimonial .contain .slider .boxes .box article {
     gap: 20px;
 }
 
-.testmonial .contain .slider .boxes .box article picture {
+.testimonial .contain .slider .boxes .box article picture {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     border: 5px solid var(--main-color);
 }
 
-.testmonial .contain .slider .boxes .box article picture img {
+.testimonial .contain .slider .boxes .box article picture img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
 }
 
-.testmonial .contain .slider .btns {
+.testimonial .contain .slider .btns {
     gap: 20px;
     padding: 20px;
 }
 
-.testmonial .contain .slider .btns i {
+.testimonial .contain .slider .btns i {
     font-size: 16px;
     transition: var(--trans);
     z-index: 1000;
 }
 
-.testmonial .contain .slider .btns i:hover {
+.testimonial .contain .slider .btns i:hover {
     cursor: pointer;
     color: var(--main-color);
 }
 
-.testmonial .contain .slider .btns i.active {
+.testimonial .contain .slider .btns i.active {
     color: var(--main-color);
     transform: rotate(45deg);
     font-size: 18px;
 }
 
 @media (max-width:1200px) {
-    .testmonial .contain {
+    .testimonial .contain {
         padding-top: 35px;
         padding-bottom: 35px;
     }
-    .testmonial .contain .slider {
+    .testimonial .contain .slider {
         gap: 15px;
         padding: 30px;
     }
-    .testmonial .contain .slider .boxes {
+    .testimonial .contain .slider .boxes {
         padding: 15px;
         height: 160px;
     }
-    .testmonial .contain .slider .boxes .box {
+    .testimonial .contain .slider .boxes .box {
         padding: 35px;
         gap: 15px;
     }
-    .testmonial .contain .slider .boxes .box article .info {
+    .testimonial .contain .slider .boxes .box article .info {
         gap: 10px;
     }
-    .testmonial .contain .slider .boxes .box article .info .name {
+    .testimonial .contain .slider .boxes .box article .info .name {
         font-size: 19px;
     }
-    .testmonial .contain .slider .boxes .box article .info .job {
+    .testimonial .contain .slider .boxes .box article .info .job {
         font-size: 17px;
     }
-    .testmonial .contain .slider .boxes .box .quote {
+    .testimonial .contain .slider .boxes .box .quote {
         width: 45px;
         height: 45px;
         font-size: 19px;
     }
-    .testmonial .contain .slider .boxes .box p {
+    .testimonial .contain .slider .boxes .box p {
         font-size: 15px;
         width: 50%;
         line-height: 24px;
     }
-    .testmonial .contain .slider .boxes .box article {
+    .testimonial .contain .slider .boxes .box article {
         gap: 15px;
     }
-    .testmonial .contain .slider .boxes .box article picture {
+    .testimonial .contain .slider .boxes .box article picture {
         width: 90px;
         height: 90px;
     }
-    .testmonial .contain .slider .btns {
+    .testimonial .contain .slider .btns {
         gap: 15px;
         padding: 15px;
     }
-    .testmonial .contain .slider .btns i {
+    .testimonial .contain .slider .btns i {
         font-size: 15px;
     }
-    .testmonial .contain .slider .btns i.active {
+    .testimonial .contain .slider .btns i.active {
         font-size: 17px;
     }
 }
 
 @media (max-width:992px) {
-    .testmonial .contain {
+    .testimonial .contain {
         padding-top: 30px;
         padding-bottom: 30px;
     }
-    .testmonial .contain .slider {
+    .testimonial .contain .slider {
         gap: 12px;
         padding: 25px;
     }
-    .testmonial .contain .slider .boxes {
+    .testimonial .contain .slider .boxes {
         padding: 12px;
         height: 280px;
     }
-    .testmonial .contain .slider .boxes .box {
+    .testimonial .contain .slider .boxes .box {
         padding: 30px;
         gap: 20px;
         display: grid;
         justify-content: center;
     }
-    .testmonial .contain .slider .boxes .box article {
+    .testimonial .contain .slider .boxes .box article {
         justify-content: center;
         display: grid;
     }
-    .testmonial .contain .slider .boxes .box article picture {
+    .testimonial .contain .slider .boxes .box article picture {
         left: 50%;
         transform: translateX(-50%);
         position: relative;
     }
-    .testmonial .contain .slider .boxes .box article .info {
+    .testimonial .contain .slider .boxes .box article .info {
         gap: 8px;
         text-align: center;
     }
-    .testmonial .contain .slider .boxes .box article .info .name {
+    .testimonial .contain .slider .boxes .box article .info .name {
         font-size: 18px;
     }
-    .testmonial .contain .slider .boxes .box article .info .job {
+    .testimonial .contain .slider .boxes .box article .info .job {
         font-size: 16px;
     }
-    .testmonial .contain .slider .boxes .box .quote {
+    .testimonial .contain .slider .boxes .box .quote {
         width: 40px;
         height: 40px;
         font-size: 18px;
         display: none;
     }
-    .testmonial .contain .slider .boxes .box p {
+    .testimonial .contain .slider .boxes .box p {
         font-size: 14px;
         width: 80%;
         text-align: center;
@@ -247,108 +247,108 @@
         transform: translateX(-50%);
         position: relative;
     }
-    .testmonial .contain .slider .boxes .box article {
+    .testimonial .contain .slider .boxes .box article {
         gap: 12px;
     }
-    .testmonial .contain .slider .boxes .box article picture {
+    .testimonial .contain .slider .boxes .box article picture {
         width: 80px;
         height: 80px;
     }
-    .testmonial .contain .slider .btns {
+    .testimonial .contain .slider .btns {
         gap: 12px;
         padding: 12px;
     }
-    .testmonial .contain .slider .btns i {
+    .testimonial .contain .slider .btns i {
         font-size: 14px;
     }
-    .testmonial .contain .slider .btns i.active {
+    .testimonial .contain .slider .btns i.active {
         font-size: 16px;
     }
 }
 
 @media (max-width:768px) {
-    .testmonial .contain {
+    .testimonial .contain {
         padding-top: 25px;
         padding-bottom: 25px;
     }
-    .testmonial .contain .slider {
+    .testimonial .contain .slider {
         gap: 10px;
         padding: 20px;
     }
-    .testmonial .contain .slider .boxes {
+    .testimonial .contain .slider .boxes {
         padding: 10px;
         height: 250px;
     }
-    .testmonial .contain .slider .boxes .box {
+    .testimonial .contain .slider .boxes .box {
         padding: 25px;
         gap: 15px;
     }
-    .testmonial .contain .slider .boxes .box article .info .name {
+    .testimonial .contain .slider .boxes .box article .info .name {
         font-size: 16px;
     }
-    .testmonial .contain .slider .boxes .box article .info .job {
+    .testimonial .contain .slider .boxes .box article .info .job {
         font-size: 14px;
     }
-    .testmonial .contain .slider .boxes .box p {
+    .testimonial .contain .slider .boxes .box p {
         font-size: 12px;
         width: 100%;
     }
-    .testmonial .contain .slider .boxes .box article {
+    .testimonial .contain .slider .boxes .box article {
         gap: 12px;
     }
-    .testmonial .contain .slider .boxes .box article picture {
+    .testimonial .contain .slider .boxes .box article picture {
         width: 70px;
         height: 70px;
     }
-    .testmonial .contain .slider .btns {
+    .testimonial .contain .slider .btns {
         gap: 10px;
         padding: 10px;
     }
-    .testmonial .contain .slider .btns i {
+    .testimonial .contain .slider .btns i {
         font-size: 12px;
     }
-    .testmonial .contain .slider .btns i.active {
+    .testimonial .contain .slider .btns i.active {
         font-size: 14px;
     }
 }
 
 @media (max-width:640px) {
-    .testmonial .contain {
+    .testimonial .contain {
         padding-top: 20px;
         padding-bottom: 20px;
     }
-    .testmonial .contain .slider {
+    .testimonial .contain .slider {
         padding: 10px;
     }
-    .testmonial .contain .slider .boxes {
+    .testimonial .contain .slider .boxes {
         padding: 10px;
         height: 200px;
     }
-    .testmonial .contain .slider .boxes .box {
+    .testimonial .contain .slider .boxes .box {
         padding: 20px;
         gap: 10px;
     }
-    .testmonial .contain .slider .boxes .box article .info .name {
+    .testimonial .contain .slider .boxes .box article .info .name {
         font-size: 14px;
     }
-    .testmonial .contain .slider .boxes .box article .info .job {
+    .testimonial .contain .slider .boxes .box article .info .job {
         font-size: 12px;
     }
-    .testmonial .contain .slider .boxes .box p {
+    .testimonial .contain .slider .boxes .box p {
         font-size: 10px;
         line-height: 16px;
     }
-    .testmonial .contain .slider .boxes .box article {
+    .testimonial .contain .slider .boxes .box article {
         gap: 10px;
     }
-    .testmonial .contain .slider .boxes .box article picture {
+    .testimonial .contain .slider .boxes .box article picture {
         width: 60px;
         height: 60px;
     }
-    .testmonial .contain .slider .btns i {
+    .testimonial .contain .slider .btns i {
         font-size: 10px;
     }
-    .testmonial .contain .slider .btns i.active {
+    .testimonial .contain .slider .btns i.active {
         font-size: 12px;
     }
 }

@@ -1,10 +1,11 @@
-const boxOne = document.querySelector(".testmonial .contain .boxes .box.one")
-const boxTwo = document.querySelector(".testmonial .contain .boxes .box.two")
-const boxThree = document.querySelector(".testmonial .contain .boxes .box.three")
+const boxOne = document.querySelector(".testimonial .contain .boxes .box.one")
+const boxTwo = document.querySelector(".testimonial .contain .boxes .box.two")
+const boxThree = document.querySelector(".testimonial .contain .boxes .box.three")
 
 const iconOne = document.getElementById('one')
 const iconTwo = document.getElementById('two')
 const iconThree = document.getElementById('three')
+console.log(boxOne)
 
 iconOne.addEventListener("click", () => {
     iconOne.classList.add("active")

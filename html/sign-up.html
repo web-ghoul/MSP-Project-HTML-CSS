@@ -198,6 +198,7 @@
             </section>
             <!--End Directory Section-->
 
+            <!--Start Sign-up Section-->
             <section class="sign-up">
                 <div class="contain grid j-c-str a-i-c">
                     <h3>CREATE AN ACCOUNT</h3>
@@ -220,39 +221,40 @@
                             <div class="in flex j-c-e a-i-c">
                                 <label for="">First name</label>
                                 <div class="input">
-                                    <input type="text">
-                                    <p>Only letters and the dot (.) character, followed by a space, are allowed.</p>
+                                    <input type="text" id="fName">
+                                    <p>Only letters are allowed.</p>
                                 </div>
                             </div>
                             <div class="in flex j-c-e a-i-c">
                                 <label>Last name</label>
                                 <div class="input">
-                                    <input type="text">
-                                    <p>Only letters and the dot (.) character, followed by a space, are allowed.</p>
+                                    <input type="text" id="lName">
+                                    <p>Only letters are allowed.</p>
                                 </div>
                             </div>
                             <div class="in flex j-c-e a-i-c">
                                 <label>Email</label>
-                                <input type="email">
+                                <input type="email" id="email">
                             </div>
                             <div class="in flex j-c-e a-i-c">
                                 <label>Password</label>
                                 <div class="pass">
-                                    <input type="password">
+                                    <input type="password" id="pass">
                                     <button id="showHide" type="button">Show</button>
                                 </div>
                             </div>
                             <div class="in flex j-c-e a-i-c">
-                                <label>Birthdate</label>
-                                <input type="date">
+                                <label>BirthDate</label>
+                                <input type="date" id="date">
                             </div>
                         </form>
                         <div class="btn flex j-c-e a-i-c">
-                            <button type="button">Save</button>
+                            <button id="save" type="button">Save</button>
                         </div>
                     </div>
                 </div>
             </section>
+            <!--End Sign-up Section-->
 
             <!--Start Footer-->
             <footer>
@@ -366,7 +368,13 @@
     <script src="../js/sticky.js"></script>
 
     <!--Sign-up Script-->
-    <script src="../js/sign-up.js"></script>
+    <script src="../js/sign-up.js" type="module"></script>
+
+    <!--Framework Script-->
+    <script src="../js/framework.js" type="module"></script>
+
+    <!--SweetAlert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>

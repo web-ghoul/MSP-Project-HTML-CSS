@@ -32,3 +32,42 @@ userIcon2.addEventListener("click", () => {
         li.classList.toggle('active')
     })
 })
+
+const profileIcon = document.querySelectorAll(".details .profile .icon i")
+const signList = document.querySelectorAll(".details div .list li a")
+if (localStorage.getItem('signed')) {
+    if (JSON.parse(localStorage.getItem('signed')) === 'in') {
+        profileIcon.forEach((icon) => {
+            icon.classList.remove('fa-user')
+            icon.classList.remove('fa-regular')
+            icon.classList.add('fa-solid')
+            icon.classList.add('fa-arrow-right-from-bracket')
+        })
+        signList[0].style.display = 'none'
+        signList[0].parentElement.style.display = 'none'
+        signList[1].innerHTML = "Sign Out"
+        signList[1].href = ""
+        signList[1].addEventListener('click', () => {
+            localStorage.setItem("signed", JSON.stringify('out'))
+            profileIcon.forEach((icon) => {
+                icon.classList.add('fa-user')
+                icon.classList.add('fa-regular')
+                icon.classList.remove('fa-solid')
+                icon.classList.remove('fa-arrow-right-from-bracket')
+            })
+            signList[0].parentElement.style.display = 'flex'
+            signList[0].style.display = 'flex'
+            signList[1].innerHTML = "Sign up"
+        })
+    } else {
+        profileIcon.forEach((icon) => {
+            icon.classList.add('fa-user')
+            icon.classList.add('fa-regular')
+            icon.classList.remove('fa-solid')
+            icon.classList.remove('fa-arrow-right-from-bracket')
+        })
+        signList[0].parentElement.style.display = 'flex'
+        signList[0].style.display = 'flex'
+        signList[1].innerHTML = "Sign up"
+    }
+}

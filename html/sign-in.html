@@ -37,14 +37,14 @@
                     <div class="logo flex j-c-s a-i-c">
                         <a href="../index.html">
                             <picture>
-                                <img src="../images/logo/logo.jpg" alt="">
+                                <img src="../images//logo/logo.jpg" alt="">
                             </picture>
                         </a>
                     </div>
                     <ul class="lists flex j-c-c a-i-c">
                         <li class="flex a-i-c j-c-c">
                             <div class="cat flex j-c-c a-i-c">
-                                <a href="">Pizza</a>
+                                <a href="../html/pizza.html">Pizza</a>
                                 <i class="fa-solid fa-angle-down"></i>
                             </div>
                             <ul class="list grid j-c-s a-i-c">
@@ -56,7 +56,7 @@
                         </li>
                         <li class="flex a-i-c j-c-c">
                             <div class="cat flex j-c-c a-i-c">
-                                <a href="">Sandwich</a>
+                                <a href="../html/sandwitch.html">Sandwich</a>
                                 <i class="fa-solid fa-angle-down"></i>
                             </div>
                             <ul class="list grid j-c-s a-i-c">
@@ -68,7 +68,7 @@
                         </li>
                         <li class="flex a-i-c j-c-c">
                             <div class="cat flex j-c-c a-i-c">
-                                <a href="">Chinese</a>
+                                <a href="../html/chinese.html">Chinese</a>
                                 <i class="fa-solid fa-angle-down"></i>
                             </div>
                             <ul class="list grid j-c-s a-i-c">
@@ -80,7 +80,7 @@
                         </li>
                         <li class="flex a-i-c j-c-c">
                             <div class="cat flex j-c-c a-i-c">
-                                <a href="">Italian</a>
+                                <a href="../html/italian.html">Italian</a>
                                 <i class="fa-solid fa-angle-down"></i>
                             </div>
                             <ul class="list grid j-c-s a-i-c">
@@ -101,10 +101,10 @@
                             </div>
                             <ul class="list grid j-c-s a-i-c">
                                 <li>
-                                    <a href="./sign-in.html">Sign in</a>
+                                    <a href="../html/sign-in.html">Sign in</a>
                                 </li>
                                 <li>
-                                    <a href="./sign-up.html">Sign up</a>
+                                    <a href="../html/sign-up.html">Sign up</a>
                                 </li>
                             </ul>
                         </div>
@@ -117,7 +117,7 @@
                         <ul class="lists grid j-c-str a-i-c">
                             <li class="grid a-i-c j-c-str">
                                 <div class="cat flex j-c-bet a-i-c">
-                                    <a href="">Pizza</a>
+                                    <a href="../html/pizza.html">Pizza</a>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <ul class="list grid j-c-str a-i-c">
@@ -129,7 +129,7 @@
                             </li>
                             <li class="grid a-i-c j-c-str">
                                 <div class="cat flex j-c-bet a-i-c">
-                                    <a href="">Sandwich</a>
+                                    <a href="../html/sandwitch.html">Sandwich</a>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <ul class="list grid j-c-s a-i-c">
@@ -141,7 +141,7 @@
                             </li>
                             <li class="grid a-i-c j-c-str">
                                 <div class="cat flex j-c-bet a-i-c">
-                                    <a href="">Chinese</a>
+                                    <a href="../html/chinese.html">Chinese</a>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <ul class="list grid j-c-s a-i-c">
@@ -153,7 +153,7 @@
                             </li>
                             <li class="grid a-i-c j-c-str">
                                 <div class="cat flex j-c-bet a-i-c">
-                                    <a href="">Italian</a>
+                                    <a href="../html/italian.html">Italian</a>
                                     <i class="fa-solid fa-angle-down"></i>
                                 </div>
                                 <ul class="list grid j-c-s a-i-c">
@@ -174,10 +174,10 @@
                                 </div>
                                 <ul class="list grid j-c-s a-i-c">
                                     <li>
-                                        <a href="./sign-in.html">Sign in</a>
+                                        <a href="../html/sign-in.html">Sign in</a>
                                     </li>
                                     <li>
-                                        <a href="./sign-up.html">Sign up</a>
+                                        <a href="../html/sign-up.html">Sign up</a>
                                     </li>
                                 </ul>
                             </div>
@@ -201,22 +201,22 @@
             <section class="sign-in">
                 <div class="contain grid j-c-str a-i-c">
                     <h3>LOG IN TO YOUR ACCOUNT</h3>
-                    <form action="POST" class="grid j-c-str a-i-c">
+                    <form action="GET" class="grid j-c-str a-i-c">
                         <article class="grid j-c-c a-i-c">
                             <div class="email flex j-c-e a-i-c">
                                 <label for="">Email</label>
-                                <input type="email" required>
+                                <input type="email" id='email'>
                             </div>
                             <div class="pass flex j-c-e a-i-c">
                                 <label for="">Password</label>
                                 <div class="pass-in">
-                                    <input type="password" required>
+                                    <input type="password" id="pass">
                                     <button type="button" id="showHide">Show</button>
                                 </div>
                             </div>
                         </article>
                         <a href="" class="center t-a-c">Forgot your password?</a>
-                        <input type="submit" class="center" value="Sign in">
+                        <button type="button" class="center" id="signInBtn">Sign in</button>
                         <div class="account flex j-c-c a-i-c">
                             <span>No account?</span>
                             <a href="./sign-up.html">Create one here</a>
@@ -239,7 +239,7 @@
                             </h3>
                             <p class="t-a-s">Sign up with us and get latest deals, offers & updates about store.</p>
                         </div>
-                        <form action="POST">
+                        <form action="">
                             <input type="email" placeholder="Your email address">
                             <input type="submit" value="sign up">
                         </form>
@@ -337,7 +337,13 @@
     <script src="../js/sticky.js"></script>
 
     <!--Sign-in Script-->
-    <script src="../js/sign-in.js"></script>
+    <script src="../js/sign-in.js" type="module"></script>
+
+    <!--SweetAlert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!--Framework Script-->
+    <script src="../js/framework.js" type="module"></script>
 </body>
 
 </html>

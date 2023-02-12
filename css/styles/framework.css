@@ -33,6 +33,9 @@ body {
     --black-color: #111;
     --black-alt-1-color: #222;
     --black-alt-color: #333;
+    --font-mulish: 'Mulish', sans-serif;
+    --font-oswald: 'Oswald', sans-serif;
+    --font-vibes: 'Great Vibes', cursive;
 }
 
 .flex {
@@ -96,7 +99,7 @@ ol {
 
 a {
     text-decoration: none;
-    color: #333;
+    color: var(--text-color);
 }
 
 .center {
@@ -109,8 +112,12 @@ button,
 input {
     outline: none;
     border: none;
-    font-family: 'Mulish', sans-serif;
+    font-family: var(--font-mulish);
     background-color: var(-white-color);
+}
+
+input.error {
+    border: 1px solid var(--red-color) !important;
 }
 
 button:hover {
