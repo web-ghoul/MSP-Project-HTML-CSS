@@ -1,0 +1,211 @@
+.Home-pizza-nav {
+    background-color: var(--gray-alt-1-color);
+    width: 100%;
+    height: 55px;
+    margin-top: 15px;
+}
+
+.Home-pizza-nav .container ul {
+    padding-top: 13px;
+}
+
+.Home-pizza-nav .container ul li,
+.Home-pizza-nav .container ul li a {
+    padding: 0px 5px;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+    color: var(--text-color);
+}
+
+.contain .pizza-img img {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.contain .pizza-img p {
+    color: var(--gray-color);
+    font-size: 13px;
+}
+
+/* products start */
+.pizza-page-products {
+    grid-template-columns: repeat(3, 350px);
+    grid-template-rows: repeat(2, 480px);
+
+    margin-top: 40px;
+    gap: 50px;
+}
+
+.pizza-page-products .layer .image {
+    background-color: var(--black-color);
+    display: block;
+    /* width: 100%; */
+    height: 75%;
+    position: relative;
+}
+
+.pizza-page-products .layer .image button {
+    background-color: var(--text-color);
+    width: 130px;
+    height: 37px;
+    border-radius: 70px;
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    transform: translateY(-50%);
+    opacity: 0;
+}
+
+.pizza-page-products .layer .image img {
+    width: 100%;
+    height: 100%;
+}
+
+.pizza-page-products .layer .caption {
+    padding: 10px 0px;
+    position: relative;
+}
+
+.pizza-page-products .layer .caption p,
+.pizza-page-products .layer .image button p {
+    font-family: Mulish, Helvetica, sans-serif;
+    font-size: 16px;
+
+}
+
+.pizza-page-products .layer .caption p {
+    color: #444;
+}
+
+.pizza-page-products .layer .caption span {
+    font-family: Oswald, Helvetica, sans-serif;
+    color: var(--light-red-color);
+    font-size: 17px;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0px;
+}
+
+.pizza-page-products .layer .caption span sub {
+    color: var(--black-color);
+    font-size: 10px;
+}
+
+.pizza-page-products .layer .caption span del {
+    color: var(--gray-color);
+    font-size: 13px;
+    padding-left: 5px;
+}
+
+.pizza-page-products .layer .caption .add-to-cart {
+    background-color: var(--text-color);
+    width: 130px;
+    height: 37px;
+    border-radius: 70px;
+    margin: 10px 110px;
+}
+
+.pizza-page-products .layer .caption .add-to-cart i,
+.pizza-page-products .layer .image button i {
+    padding-right: 15px;
+}
+
+.pizza-page-products .layer .caption .add-to-cart p,
+i,
+.pizza-page-products .layer .image button {
+    color: var(--white-color);
+}
+
+.pizza-page-products .layer .caption .icons i {
+    background-color: var(--black-color);
+    width: 35px;
+    height: 35px;
+    display: flex;
+    border-radius: 50px;
+    transform: rotateY('0');
+}
+
+.pizza-page-products .layer .caption .icons .heart,
+.chart {
+    position: absolute;
+    top: 76px;
+    left: 70px;
+}
+
+.pizza-page-products .layer .caption .icons .chart {
+    left: 245px;
+}
+
+/* transition */
+.pizza-page-products .layer .caption button:hover {
+    background-color: var(--main-color);
+    cursor: pointer;
+}
+
+.pizza-page-products .layer .caption button:hover p,
+.pizza-page-products .layer .caption button:hover i {
+    color: var(--black-color);
+}
+
+.pizza-page-products .layer .caption .heart:hover i,
+.pizza-page-products .layer .caption .chart:hover i {
+    background-color: var(--main-color);
+    color: var(--black-color);
+    cursor: pointer;
+}
+
+.layer .image:hover {
+    cursor: pointer;
+}
+
+.pizza-page-products .layer .image:hover button {
+    opacity: 1;
+}
+
+.pizza-page-products .layer .image button:hover {
+    background-color: var(--main-color);
+}
+
+.pizza-page-products .layer .image button:hover p,
+.pizza-page-products .layer .image button:hover i {
+    color: var(--black-color);
+}
+
+.pizza-page-products .layer .image:hover.caption.icons i {
+    transform: rotateY('90');
+}
+
+/* Responsive */
+@media (max-width:992px) {
+    .pizza-page-products {
+        grid-template-columns: repeat(2, 350px);
+        grid-template-rows: repeat(2, 480px);
+        margin-top: 40px;
+        gap: 40px;
+    }
+}
+
+@media (max-width:640px) {
+    .pizza-page-products {
+        grid-template-columns: repeat(2, 250px);
+        grid-template-rows: repeat(2, 480px);
+        margin-top: 40px;
+        gap: 35px;
+    }
+
+    .pizza-page-products .layer .image button {
+        left: 56px;
+    }
+
+    .pizza-page-products .layer .caption .add-to-cart {
+        margin: 10px 58px;
+    }
+
+    .pizza-page-products .layer .caption .icons .heart {
+        left: 20px;
+    }
+
+    .pizza-page-products .layer .caption .icons .chart {
+        left: 191px;
+    }
+}
